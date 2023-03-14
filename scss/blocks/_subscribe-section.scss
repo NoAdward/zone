@@ -1,0 +1,110 @@
+.subscribe-section {
+  margin-top: 120px;
+  background: linear-gradient(
+    180deg,
+    rgba(254, 254, 255, 0.0348) 0%,
+    rgba(255, 255, 255, 0.048) 100%
+  );
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
+  border-radius: 70px;
+  padding: 50px 155px 38px 155px;
+  margin-inline: auto;
+  &__title {
+    text-align: center;
+    @include text($ff, 700, 4.2rem, 5.5rem, $white);
+    margin-bottom: 13px;
+  }
+
+  &__desc {
+    @include text($ff, 400, 1.6rem, 3rem, $white);
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 29px;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+    background: linear-gradient(
+      180deg,
+      rgba(254, 254, 255, 0.0348) 0%,
+      rgba(255, 255, 255, 0.048) 100%
+    );
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
+    border-radius: 70px;
+    padding: 10px 10px 10px 0px;
+    @include tablet{
+      display: flex;
+      flex-direction: column;
+      background: none;
+    }
+
+  }
+  @include tablet {
+    padding: 50px 0;
+    
+  }
+  
+}
+.field {
+  max-width: 860px;
+  flex-grow: 1;
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 254, 255, 0.0348) 0%,
+    rgba(255, 255, 255, 0.048) 100%
+  );
+  border-radius: 0;
+  border-radius: 70px;
+  &_input {
+    z-index: 99;
+    max-width: 860px;
+    width: 100%;
+    @include text($ff, 400, 1.8rem, 3rem, $white);
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background-color: inherit;
+    opacity: 0.9;
+    
+
+    &::placeholder {
+      color: $white;
+      opacity: 0.9;
+      @include tablet{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      }
+    }
+   
+   
+  }
+  @include tablet {
+    display: flex;
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+  }
+}
+.btn._primary._1 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 70px;
+  flex-wrap: wrap;
+  @include mobile {
+    
+    padding: 10px;
+    gap: 0;
+    border-radius: 50%;
+    span {
+      display: none;
+     
+    }
+  }
+}
+

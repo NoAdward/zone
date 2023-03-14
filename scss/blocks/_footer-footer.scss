@@ -1,0 +1,32 @@
+.container.__footer {
+   
+    border-top: 1px solid #969696;
+    opacity: 0.2;
+    width: 100%;
+    max-width: 1472px;
+    margin-top: 50px;
+  
+}
+.footer-footer {
+
+  padding: 33px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+
+  &__title {
+    color: rgba(255, 255, 255, 0.8);
+    @include text($ff, 400, 1.4rem, 1.4rem, $white);
+  }
+
+  &__desc  {
+    justify-content: space-between;
+    display: flex;
+    gap: 53px;
+    @include text($ff, 400, 1.4rem, 1.4rem, $white);
+    
+    a {
+        color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
